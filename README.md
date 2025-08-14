@@ -1,5 +1,6 @@
 # Tailwind CSS
 
+<hr style="border: none; border-top: 1px solid #ccc; margin: 1em 0;" />
 ## 1. 설치
 
 - 안정화 버전 설치
@@ -216,7 +217,9 @@ module.exports = {
   plugins: [],
 };
 ```
+
 - App.tsx
+
 ```tsx
 import TodoList from './components/todos/TodoList';
 import TodoWrite from './components/todos/TodoWrite';
@@ -289,7 +292,7 @@ function App(): JSX.Element {
           </button>
         </div>
         <main className="container-app py-8">
-          <div className="space-y-6 rounded-xl2 bg-white p-6 shadow-card dark:bg-neutral-800">
+          <div className="rounded-xl2 shadow-card space-y-6 bg-white p-6 dark:bg-neutral-800">
             <TodoWrite />
             <TodoList />
           </div>
